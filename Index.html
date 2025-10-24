@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="scroll-fade-in">
             <h2>About Me 🙋‍♂️</h2>
             <p>
                 Yoo Wassup! I'm Lester, a chill guy from Cogon, Compostela, Cebu. I'm deeply passionate about all things <mark>digital and musical</mark>. I'm currently honing my skills in web development, driven by the hope that the Internet never goes down. 
@@ -31,7 +32,7 @@
         
         <hr>
 
-        <section>
+        <section class="scroll-fade-in">
             <h2>My Hobbies & Interests 🎧🎮</h2>
             <p>When I'm not coding, you can find me:</p>
             <ul>
@@ -46,39 +47,80 @@
 
         <hr>
 
-        <section>
-            <h2>Technical Skills 💻</h2>
-            <table>
-                <caption>My current skill set and proficiency level.</caption>
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Mastery Level</th>
-                        <th>Experience</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Video Editing</td>
-                        <td>Intermediate</td>
-                        <td>3 Year</td>
-                    </tr>
-                    <tr>
-                        <td>Graphic Design</td>
-                        <td>Beginner/Intermediate</td>
-                        <td>2 Years</td>
-                    </tr>
-                    <tr>
-                        <td>Coding C / Java</td>
-                        <td>Beginner</td>
-                        <td>2 Years</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
 
+        <div class="skills-wrapper scroll-fade-in"> 
+            <section>
+                <h2>Technical Skills 💻</h2>
+                <table>
+                    <caption>My current skill set and proficiency level.</caption>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Mastery Level</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Video Editing</td>
+                            <td>Beginner/Intermediate</td>
+                            <td>3 Year</td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Design</td>
+                            <td>Beginner/Intermediate</td>
+                            <td>2 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Coding C / Java / HTML / CSS </td>
+                            <td>Beginner</td>
+                            <td>2 Years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <img src="images/photoshop.png" alt="Adobe Photoshop Logo" class="floating-logo photoshop">
+            <img src="images/html.png" alt="HTML Logo" class="floating-logo html">
+            <img src="images/davinci.png" alt="DaVinci Resolve Logo" class="floating-logo davinci">
+            <img src="images/canva.png" alt="Canva Logo" class="floating-logo canva">
+            <img src="images/capcut.png" alt="CapCut Logo" class="floating-logo capcut">
+            <img src="images/java.png" alt="Java Logo" class="floating-logo java">
+            <img src="images/css.png" alt="CSS Logo" class="floating-logo css">
+            <img src="images/Pr.png" alt="Premiere Pro Logo" class="floating-logo pr">
+            <img src="images/ae.png" alt="After Effects Logo" class="floating-logo ae">
+        </div>
         <hr>
 
+        <section class="scroll-fade-in">
+            <h2>Favorite Media</h2>
+            
+            <h3>My Go-To Music in the Shower (Audio)</h3>
+            <figure>
+                <audio controls style="width: 100%;">
+                    <source src="Media/Adam Sandler - At a Medium Pace.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Listening to this <mark>EVERY DAY</mark> always gets my problems GO away!</figcaption>
+            </figure>
+
+            <h3>BEST VIDEO EVER</h3>
+            
+            <figure style="max-width: 600px;"> 
+                 <video width="100%" height="auto" controls poster="images/hq720.jpg">
+                    <source src="Media/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                 </video>
+    
+             <figcaption>
+                <strong style="color: red;"> ⚠ WARNING!</strong> You must to be <mark>18+</mark> to watch this Video</figcaption>
+            </figure>
+
+        </section>
+
+         <hr>
+        
+        <div class="skills-wrapper scroll-fade-in">
         <section>
             <h2>Education Background</h2>
             <table>
@@ -110,38 +152,11 @@
             </table>
         </section>
 
-        <hr>
-        
-        <section>
-            <h2>Favorite Media</h2>
-            
-            <h3>My Go-To Music in the Shower (Audio)</h3>
-            <figure>
-                <audio controls>
-                    <source src="Media/Adam Sandler - At a Medium Pace.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                <figcaption>Listening to this <mark>EVERY DAY</mark> always gets my problems GO away!</figcaption>
-            </figure>
 
-            <h3>BEST VIDEO EVER</h3>
-            <figure>
-                <video width="320" height="240" controls poster="images/hq720.jpg">
-                    <source src="Media/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                
-                <br>
-                
-                <figcaption>
-                    <strong style="color: red;"> &#9888  WARNING!</strong> You must to be <mark>18+</mark> to watch this Video</figcaption>
-            </figure>
-
-        </section>
 
     </main>
 
-    <aside>
+    <aside class="scroll-fade-in">
         <h2>Fun Facts About Me</h2>
         <ul>
             <li>I can solve a Rubik's Cube in under 1 minutes.</li>
@@ -151,24 +166,37 @@
     </aside>
 
     <footer>
-        <p>&copy; 2025 St1nky All rights reserved.</p>
-        <p>Connect with me:</p>
-        <nav>
-            <a href="www.linkedin.com/in/st1nky" target="_blank">LinkedIn</a> |
-            <a href="https://www.facebook.com/St1nkyyy" target="_blank">Facebook</a> |
-            <a href="https://open.spotify.com/user/31v24kn6mrgwks6b6eqin76wtr54?si=cbc9aa9b4b6147a7" target="_blank">Spotify</a> |
-            <a href="https://soundcloud.com/st1nky-897674483" target="_blank">SoundCloud</a>
-        </nav>
+        <p>© 2025 St1nky All rights reserved.</p>
+        
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/St1nkyyy" target="_blank">
+                    <span class="tooltip">Facebook</span>
+                    <img src="images/fb.png" alt="">
+                </a>
+            </li>
+            
+            <li class="icon linkedin">
+                <a href="https://www.linkedin.com/in/st1nky" target="_blank">
+                    <span class="tooltip">LinkedIn</span>
+                    <img src="images/linkin.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon spotify">
+                <a href="https://open.spotify.com/user/31v24kn6mrgwks6b6eqin76wtr54?si=cbc9aa9b4b6147a7" target="_blank">
+                    <span class="tooltip">Spotify</span>
+                    <img src="images/vecteezy_spotify-3d-logo_27224002.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon github">
+                <a href="https://github.com/St1nkyy" target="_blank">
+                    <span class="tooltip">GitHub</span>
+                    <img width="500" height="50" src="images/vecteezy_github-logo-transparent-background_46437248.png" alt="">
+                </a>
+            </li>
+        </ul>
     </footer>
-
-    <style>
-        html{
-            cursor: url("images/rica.cur"), auto;
-        }
-    
-    </style>
-
-    
-
 </body>
 </html>

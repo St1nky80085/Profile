@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact St1nky</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="scroll-fade-in">
         <p>I'd love to hear from you! Please fill out the form below.</p>
 
         <form action="#" method="post">
@@ -37,15 +38,11 @@
 
                 <label for="birthday">Birthday:</label>
                 <input type="date" id="birthday" name="user_birthday"><br><br>
-
-            </fieldset>
-
-            <fieldset>
+                
                 <legend>Your Inquiry</legend>
-
-                <label for="subject">Subject:</label>
-                <select id="subject" name="inquiry_subject" required>
-                    <option value="" disabled selected>Select an option</option>
+                <label for="reason">Reason for Contact:</label>
+                <select id="reason" name="contact_reason">
+                    <option value="">Select an option</option>
                     <option value="project">New Project Inquiry</option>
                     <option value="feedback">Website Feedback</option>
                     <option value="general">General Question</option>
@@ -66,7 +63,9 @@
                 <input type="checkbox" id="newsletter" name="newsletter_subscription">
                 <label for="newsletter">Yes, subscribe me to the occasional newsletter!</label><br><br>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="neon-button">
+                    <span>Send Message</span>
+                </button>
             </fieldset>
 
         </form>
@@ -74,6 +73,39 @@
 
     <footer>
         <p>&copy; 2025 St1nky. All contact information is kept confidential.</p>
+
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/St1nkyyy" target="_blank">
+                    <span class="tooltip">Facebook</span>
+                    <img src="images/fb.png" alt="">
+                </a>
+            </li>
+            
+            <li class="icon linkedin">
+                <a href="https://www.linkedin.com/in/st1nky" target="_blank">
+                    <span class="tooltip">LinkedIn</span>
+                    <img src="images/linkin.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon spotify">
+                <a href="https://open.spotify.com/user/31v24kn6mrgwks6b6eqin76wtr54?si=cbc9aa9b4b6147a7" target="_blank">
+                    <span class="tooltip">Spotify</span>
+                    <img src="images/vecteezy_spotify-3d-logo_27224002.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon github">
+                <a href="https://github.com/St1nkyy" target="_blank">
+                    <span class="tooltip">GitHub</span>
+                    <img width="500" height="50" src="images/vecteezy_github-logo-transparent-background_46437248.png" alt="">
+                </a>
+            </li>
+        </ul>
+        
     </footer>
+
+    <script src="scroll.js"></script>
 </body>
 </html>

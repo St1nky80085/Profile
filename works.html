@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St1nky's Works</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     
@@ -20,13 +21,25 @@
     </header>
 
     <main>
-        <p>A simple showcase of my best work in Graphic Design and Video Editing.</p>
+        <p class="scroll-fade-in">A simple showcase of my best work in Graphic Design and Video Editing.</p>
         
         <hr>
 
-        <section>
+        <section class="scroll-fade-in">
             <h2>Graphic Design 🖌️</h2>
-            <p>...........................................................</p>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <img src="images/Acquaintance Party 2025.jpg" alt="Poster 1">
+                    <img src="images/Teacher's Day Event (1).jpg" alt="Poster 2">
+                    <img src="images/TGO CTU NITE PUBMAT (6).jpg" alt="Poster 3">
+                    <img src="images/MAMAR (1).jpg" alt="Poster 1 Duplicate">
+                    <img src="images/Album Cover.jpg" alt="Poster 2 Duplicate">
+                    <img src="images/Typing Test.jpg" alt="Poster 3 Duplicate">
+                    <img src="images/Acquaintance Party 2025.jpg" alt="Poster 1">
+                    <img src="images/Teacher's Day Event (1).jpg" alt="Poster 2">
+                    <img src="images/TGO CTU NITE PUBMAT (6).jpg" alt="Poster 3">
+                </div>
+            </div>
 
             <hr>
 
@@ -41,7 +54,7 @@
         
         <hr>
 
-        <section>
+        <section class="scroll-fade-in">
             <h2>Video Editing 🎥</h2>
             <p>My portfolio includes montages and **3 official music videos** (Still in progress).</p>
             
@@ -67,7 +80,7 @@
                 <h3>FPS Clutch Montage</h3>
                 <p>Banorant Montage</p>
                 <figure>
-                    <video width="300" controls>
+                    <video height="auto" width="600" controls>
                         <source src="Media/Montage.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -76,7 +89,7 @@
             </article>
         </section>
 
-        <aside>
+        <aside class="scroll-fade-in">
             <h2>Other Skills </h2>
             <ul>
                 <li>Photography & Retouching</li>
@@ -89,7 +102,38 @@
 
     <footer>
         <p>&copy; 2025 St1nky Portfolio.</p>
+        
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/St1nkyyy" target="_blank">
+                    <span class="tooltip">Facebook</span>
+                    <img src="images/fb.png" alt="">
+                </a>
+            </li>
+            
+            <li class="icon linkedin">
+                <a href="https://www.linkedin.com/in/st1nky" target="_blank">
+                    <span class="tooltip">LinkedIn</span>
+                    <img src="images/linkin.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon spotify">
+                <a href="https://open.spotify.com/user/31v24kn6mrgwks6b6eqin76wtr54?si=cbc9aa9b4b6147a7" target="_blank">
+                    <span class="tooltip">Spotify</span>
+                    <img src="images/vecteezy_spotify-3d-logo_27224002.png" alt="">
+                </a>
+            </li>
+
+            <li class="icon github">
+                <a href="https://github.com/St1nkyy" target="_blank">
+                    <span class="tooltip">GitHub</span>
+                    <img width="500" height="50" src="images/vecteezy_github-logo-transparent-background_46437248.png" alt="">
+                </a>
+            </li>
+        </ul>
     </footer>
 
+    <script src="scroll.js"></script>
 </body>
 </html>
